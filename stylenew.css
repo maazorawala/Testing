@@ -1,0 +1,240 @@
+body {
+  background: black;
+  color: blanchedalmond;
+  font-family: "Parisienne", cursive;
+}
+
+.home {
+  border: double 10px;
+  text-decoration: underline double;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation-name: home;
+  animation-duration: 3s;
+}
+.para{
+  font-size: 30px;
+}
+.top{
+  font-family:  "Raleway", sans-serif;
+  color:white;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-style: ridge;
+  width : 200px;
+  height: 50px;
+  border-color: red;
+  text-decoration: none;
+}
+.top:hover{
+  color : red;
+  font-size: 30px;
+  transition: 0.5s;
+  border-color: white;
+}
+
+h1 {
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: black;
+  min-height: 50vh;
+}
+.black {
+  background: url(https://i.ibb.co/HdGRVqj/blackcoffee.jpg) center / cover fixed;
+}
+.galao {
+  background: url(https://i.ibb.co/NKfFLt1/galao.jpg) center / cover fixed;
+}
+.cortado {
+  background: url(https://i.ibb.co/Cbyh4cQ/8373207389-8114bdeacf-z-lbvpk4.jpg)
+    center / cover fixed;
+}
+
+.flatwhite {
+  background: url(https://i.ibb.co/WvSrhw5/Flat-White-Coffee-012.jpg) center /
+    cover fixed;
+}
+.irish {
+  background: url(https://i.ibb.co/jvSWJwM/national-irish-coffee-day.jpg) center /
+    cover fixed;
+}
+.affagato {
+  background: url(https://i.ibb.co/dkN5jdQ/Affogato-Coffee-Dessert-8.jpg) center /
+    cover fixed;
+}
+.mocha {
+  background: url(https://i.ibb.co/tp1ByYM/Mocha.jpg) center / cover fixed;
+}
+.dropbtn {
+  margin-top: 200px;
+  background-color: wheat;
+  color: black;
+font-family: "Raleway", sans-serif;
+  padding: 26px;
+  font-size: 26px;
+  border: 100px;
+  width: 1000px;
+  font-weight: 600;
+  animation-name: navi;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(238, 8, 8);
+  z-index: 1;
+   width: 250px;
+     align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: blanchedalmond;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background:url(https://i.ibb.co/6wmM4r3/pexels-mentatdgt-1185434.jpg) center;
+   transition: 0.5s;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(0, 0, 0);
+  color: black;
+   transition:2s;
+}
+@keyframes home{
+  0%{
+    opacity: 0;
+    transform:translateY(-100px);
+  }
+  75%{
+    opacity: 0.5;
+  }
+  100%{
+    color: cornsilk;
+  }
+}
+@keyframes navi{
+  0%{
+    opacity: 0;
+    transform:translateY(-600px);
+}
+50%{
+  opacity: 0.5;
+  transform: translateY(-50px);
+}
+100%{
+  opacity: 1;
+  transform: translateY(-80px);
+}
+}
+footer{
+  font-family: 'Exo',
+  sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: url(https://i.ibb.co/6wmM4r3/pexels-mentatdgt-1185434.jpg) center / cover no-repeat fixed;
+  color:wheat;
+}
+.intro{
+color : wheat;
+display : flex;
+text-align: center;
+justify-content: center;
+}
+.navigation{
+   font-family: 'Exo',
+   sans-serif;
+   position: relative;
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   display: flex;
+}
+.dropbutton{
+  display : flex;
+  text-align:center;
+  justify-content:center;
+  font-size: 100px;
+  background-color: red;
+  font-family: 'Exo',
+  sans-serif;
+  border: 2px ridge transparent;
+ 
+}
+.dropcontent a{
+  font-size: 30px;
+  color: blanchedalmond;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropcontent{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: transparent;
+   width: 350px;
+   align-items:center;
+   align-content:center ;
+   text-align:center ;
+   box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+}
+.dropcontent a:hover {
+  background:url(https://i.ibb.co/myW5hrg/pexels-elijah-odonnell-4173624.jpg) center;
+  transition: 5s;
+  margin: 5px;
+}
+
+.navigation:hover .dropcontent {
+  display: inline-block;
+
+}
+
+.navigation:hover .dropbutton {
+  font-size: 200px;
+  background-color: transparent;
+  color: grey;
+  transition: 2.9s;
+  transform: rotate(180deg);
+}
+.copy{
+  font-size: 40px;
+  align-items:center;
+  align-content:center;
+  text-align:center;
+}

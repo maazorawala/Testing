@@ -1,0 +1,216 @@
+body {
+  background:url(https://i.ibb.co/cTm4V8y/pexels-samuel-kalina-3843695.jpg)center  fixed;
+  font-family: "Parisienne", cursive;
+  color: black;
+}
+h1 {
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  border-style: groove;
+  border-width: 10px;
+  animation-name: home;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.top {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+h3 {
+  font-size: 50px;
+  word-wrap: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.blog1 {
+  background: url(https://i.ibb.co/jrTbdcx/affogatto2.jpg) fixed;
+  height: 500px;
+  color: rgb(0, 0, 0);
+  font-family: "Parisienne", cursive;
+}
+.blog2 {
+  background: url(https://i.ibb.co/vXYHyvc/Glasgow-Coffee-Festival-2020-Coffee-to-go-Glasgow-Coffee-Festival-will-be-the-first-in-the-world-to.jpg)
+    fixed;
+  height: 500px;
+  font-family: "Parisienne", cursive;
+  color: rgb(0, 0, 0);
+}
+.blog3 {
+  background: url(https://i.ibb.co/C1P4bmX/microclimate-air-2.jpg) fixed;
+  height: 500px;
+  font-family: "Parisienne", cursive;
+  color: rgb(0, 0, 0);
+}
+.dropbtn {
+  background-color: #000000;
+  border-style: ridge;
+  color: grey;
+  font-family: "Raleway", sans-serif;
+  padding: 26px;
+  font-size: 26px;
+  border: 100px;
+  width: 1000px;
+  font-weight: 600;
+  animation-name: navi;
+  animation-duration: 3s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #242423;
+  opacity: 0.9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(71, 68, 70);
+  z-index: 1;
+  width: 250px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: #efe9e7;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition: 1s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  transition: 3s;
+  background-color: transparent;
+}
+@keyframes home {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+@keyframes navi {
+  0% {
+    opacity: 0;
+    transform: translateY(-600px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  border: 50px;
+  padding: 50px;
+  font-family: 'Exo',
+    sans-serif;
+  height: 50vh;
+
+  color: black;
+}
+
+.intro {
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.navigation {
+  font-family: 'Exo',
+    sans-serif;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+.dropbutton {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 100px;
+  background-color: transparent;
+  color: #423e3b;
+  font-family: 'Exo',
+    sans-serif;
+  border: 2px ridge transparent;
+
+}
+
+.dropcontent a {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropcontent {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: transparent;
+  width: 350px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+}
+
+.dropcontent a:hover {
+  background: url(https://i.ibb.co/4T1GPV7/pexels-nika-akin-3686890.jpg) center;
+  
+  transition: 5s;
+  margin: 5px;
+}
+
+.navigation:hover .dropcontent {
+  display: inline-block;
+
+}
+
+.navigation:hover .dropbutton {
+  font-size: 200px;
+  background-color: transparent;
+  color: #000000;
+  transition: 2.9s;
+  transform: rotate(180deg);
+}
+
+.copy {
+  font-size: 40px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+}
