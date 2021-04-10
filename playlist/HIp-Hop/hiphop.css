@@ -1,0 +1,186 @@
+body{
+    background:black;
+    padding:0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    /* background: rgb(224,17,44);
+background: linear-gradient(90deg, rgba(224,17,44,1) 0%, rgba(226,49,85,1) 31%, rgba(234,168,236,1) 100%); */
+
+}
+
+#loader { 
+            border: 12px solid #D5D5AF; 
+            border-radius: 50%; 
+            border-top: 12px solid rgb(0, 0, 0); 
+            width: 70px; 
+            height: 70px; 
+            animation: spin 2s linear infinite; 
+        } 
+        @keyframes spin { 
+            100% { 
+                transform: rotate(360deg); 
+            } 
+        } 
+        .center { 
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            margin: auto; 
+        }
+.load-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    color:#D5D5AF;
+}
+body a{
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+#navbar{
+    background-color: rgba(0, 0, 0, 0);
+    height:80px;
+    display:flex;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow:hidden;
+    top: 0;
+    transition: 0.5s ease-in-out ;
+}
+#navbar a{
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+}
+#navbar a:hover {
+    color: #ff88d7;
+    transition: 0.5s;
+}
+.nav-container{
+    position: sticky;
+    margin-bottom: 80px;
+}
+#navbar.scroll{
+    background: rgb(0, 0, 0);
+    transition: 0.9s;
+    border-bottom: 2px rgb(255, 255, 255) solid;
+}
+.playlist-container{
+    height: 330px;
+    width:330px;
+    background: linear-gradient(rgba(0, 183, 255, 0.5) , rgba(255, 0, 0, 0.5)),url(../../Resources/Images/back-play1.jpg)center / cover fixed no-repeat ;
+    margin-left: 70px;
+    margin-top: 80px;
+    border-radius: 15px;
+    transition: 0.4s ease-in-out ;
+}
+.img{
+    height: 320px;
+    border-radius: 15px;
+    transition: 0.7s ease-in-out;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.playlist-container:hover{
+    transition: 0.5s;
+    width: 610px;
+    height: 360px;
+    background: url(../../Resources/Images/back-play1.jpg)center / cover fixed no-repeat ;
+}
+
+.text-container{
+    color: rgb(0, 0, 0);
+}
+#text-card{
+    color:rgb(0, 0, 0);
+    display: none;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: -2px;
+    margin-left: 330px;
+    margin-top: -230px;
+}
+.playlist-container:hover #text-card{
+    display: flex;
+}
+.playlist-container:hover .img{
+    margin-top: 15px;
+    transition: 0.7s;
+    border: 5px white solid;
+}
+.description{
+    font-weight: 800;
+    display:none;
+    margin-left:330px ;
+}
+.playlist-container:hover .description{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+}
+.rap-caviar{
+    background:linear-gradient(rgba(255, 0, 0, 0.5) , rgba(153, 0, 255, 0.671)), url(../../Resources/Images/try9.jpg)center / cover fixed no-repeat ;
+    margin-left: 50%;
+    width:280px
+}
+.rap-caviar .img{
+    border:2px white solid;
+}
+.rap-caviar:hover {
+    background: url(../../Resources/Images/try9.jpg)center / cover fixed no-repeat ;
+}
+.rap-caviar #text-card{
+    margin-left: 280px;
+    color: #fff;
+}
+.rap-caviar .description{
+    margin-left: 280px;
+    color: #fff;
+}
+.old-rap {
+    background:url(../../Resources/Images/old-school1.jpg)center / cover fixed no-repeat ;
+    border:5px white solid;
+}
+.old-rap:hover{
+    background:url(../../Resources/Images/old-school1.jpg)center / cover fixed no-repeat ;
+    border:1px white solid;
+}
+.old-rap #text-card, .description {
+    color:white;
+}
+.old-rap:hover .img{
+    border:2px transparent solid;
+}
+.supermix1{
+    background:linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)),url(../../Resources/Images/sup-3.jpg)center / cover fixed no-repeat ; 
+    width: 340px;
+}
+.supermix1 .img{
+    border:2px transparent solid;
+}
+.supermix1 #text-card{
+    margin-left: 400px;
+}
+.supermix1:hover{
+    width: 630px;
+    background:url(../../Resources/Images/sup-3.jpg)center / cover fixed no-repeat ; 
+}
+.supermix1 .description {
+    margin-left: 330px;
+}

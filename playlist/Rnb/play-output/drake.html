@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Drake</title>
+    <script src="https://kit.fontawesome.com/c1ced132ff.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="drake.css">
+</head>
+<body>
+    <div class="load-pages">
+        <h1 class="load-text">Please wait while the page loads</h1>
+        <div id="loader" class="center" ></div>
+    </div>
+    <div class="nav-container">
+        <nav id="navbar"> 
+            <a href="../../../home/index.html" >Home</a>
+            <a href="../../../discover/index.html" >Discover</a>
+            <a href="https://www.officialcharts.com/charts/official-hip-hop-and-r-and-b-singles-chart/"   target="_blank" >Official Charts</a>
+            <a href="../../../contact_us/index.html" >Contact Us</a>
+        </nav>
+    </div>
+    <div class="head">
+        <h1 class="title" >This is Drake</h1>
+    </div>
+    <div class="card-container">
+        <a href="#">
+        <div class="card">
+            <header class="article-header">
+                <div>
+                    <div class="category-title">
+                        2020
+                    </div>
+                </div>
+                <h2 class="article-title">
+                    Scary Hours 2
+                </h2>
+            </header>
+            <img src="../../../Resources/Images/scary-hours.jpg" alt="" class="artist-image">
+        </div>
+        </a>
+        <a href="#">
+        <div class="card">
+            <header class="article-header">
+                <div>
+                    <div class="category-title">
+                        2017
+                    </div>
+                </div>
+                <h2 class="article-title">
+                    More Life
+                </h2>
+            </header>
+            <img src="../../../Resources/Images/morelife.jfif" alt="" class="artist-image">
+        </div>
+    </a>
+    <a href="#">
+        <div class="card">
+            <header class="article-header">
+                <div>
+                    <div class="category-title">
+                        2013
+                    </div>
+                </div>
+                <h2 class="article-title">
+                    Nothing was<br>the same
+                </h2>
+            </header>
+            <img src="../../../Resources/Images/nothing.jpg" alt="" class="artist-image">
+        </div>
+    </a>
+    </div>
+    <iframe src="https://open.spotify.com/embed/album/5LuoozUhs2pl3glZeAJl89" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7QOv5kjbU68" width="100%" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E4qQ00I1Jm1ay" width="100%" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/album/6OQ9gBfg5EXeNAEwGSs6jK" width="100%" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <script>
+        window.onscroll = () => {
+    const nav = document.querySelector("#navbar");
+    if (this.scrollY <= 10) nav.className = ''; else nav.className="scroll";
+};
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility="hidden";
+        document.querySelector("#loader").style.visibility="visible";
+        document.querySelector(".load-text").style.visibility="visible";
+    }
+    else {
+        document.querySelector("#loader").style.display="none";
+        document.querySelector("body").style.visibility="visible";
+        document.querySelector(".load-text").style.display="none";
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c1ced132ff.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="Cdj9KxjC"></script>
+    <div class="load-pages">
+        <h1 class="load-text">PLease wait while the page loads</h1>
+        <div id="loader" class="center" ></div>
+    </div>
+    <div class="nav-container">
+        <nav id="navbar" > 
+            <a href="../home/index.html" >Home</a>
+            <a href="../discover/index.html" >Discover</a>
+            <a href="https://www.officialcharts.com/charts/official-hip-hop-and-r-and-b-singles-chart/" target="_blank" >Official Charts</a>
+            <a href="./index.html" >Contact Us</a>
+        </nav>
+    </div>
+    <h1 class="centerHead">Developers Contact</h1>
+    <h3 class="description">Here you can contact the developers and give your reviews and suggestions</h3>
+    <div class="card-container">
+        <div class="dev1">
+            <h1 class="devName">Maaz Orawala</h1>
+            <a href="mailto:mohammadmaaz.o@somaiya.edu" class="mail-link" target="_blank" title="E-mail" ><i class="fas fa-mail-bulk"></i></a>
+            <h1>FYCO Diploma KJSP</h1>
+            <h2>+91 89999 79567</h2>
+
+        </div>
+        <div class="dev1">
+            <h1 class="devName">Jenil Parmar</h1>
+            <a href="mailto:jenil.tp@somaiya.edu" class="mail-link" target="_blank" title="E-mail" ><i class="fas fa-mail-bulk"></i></a>
+            <h1>FYCO Diploma KJSP</h1>
+            <h2>+91 88501 22853</h2>
+
+        </div>
+        <div class="dev1">
+            <h1 class="devName">Manavi Nandimath</h1>
+            <a href="mailto:manavi.nandimath@somaiya.edu" class="mail-link" target="_blank" title="E-mail" ><i class="fas fa-mail-bulk"></i></a>
+            <h1>FYCO Diploma KJSP</h1>
+            <h2>+91 91372 90280</h2>
+
+        </div>
+    </div>
+    <div id="comment">
+        <h3 class="description" >Here you can give suggestions or reviews by commenting below<br> (Login to facebook to comment on the plugin)</h3>
+    <div id="comment" class="fb-comments" data-href="http://127.0.0.1:5500/contact_us/index.html" data-width="" data-numposts="5"></div>
+</div>
+    <script>document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility="hidden";
+        document.querySelector("#loader").style.visibility="visible";
+        document.querySelector(".load-text").style.visibility="visible";
+    }
+    else {
+        document.querySelector("#loader").style.display="none";
+        document.querySelector("body").style.visibility="visible";
+        document.querySelector(".load-text").style.display="none";
+    }
+}
+
+window.onscroll = () => {
+    const nav = document.querySelector("#navbar");
+    if (this.scrollY <= 10) nav.className = ''; else nav.className="scroll";
+};</script>
+</body>
+</html>
