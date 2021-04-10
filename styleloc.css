@@ -1,0 +1,200 @@
+body{
+     font-family: "Parisienne", cursive;
+     background: url(https://i.ibb.co/LgwbfZ1/pexels-haikal-tamimi-1047178.jpg) fixed;
+     color: blanchedalmond;
+}
+a{
+    font-family:  "Raleway", sans-serif;
+    color: white;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    align-items: center;
+}
+.title{
+    display: flex;
+    text-decoration: underline double;
+    border: double 10px;
+    animation-name: home;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+p{
+    font-size: 35px;
+}
+ol{
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.dropbtn {
+  margin-top: 150px;
+  background:wheat;
+  color: black;
+font-family: "Raleway", sans-serif;
+  padding: 26px;
+  font-size: 26px;
+  border: 100px;
+  width: 1000px;
+  font-weight: 600;
+    animation-name: navi;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(29, 27, 27);
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #CCC9A1;
+  z-index: 1;
+   width: 250px;
+     align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: blanchedalmond;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(0, 0, 0); transition: 1s;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent; transition:2s; }
+
+@keyframes home{
+  0%{
+    opacity: 0;
+    transform:translateY(-100px);
+  }
+  75%{
+    opacity: 0.5;
+  }
+  100%{
+    color: cornsilk;
+  }
+}
+@keyframes navi{
+  0%{
+    opacity: 0;
+    transform:translateY(-600px);
+}
+50%{
+  opacity: 0.5;
+  transform: translateY(-50px);
+}
+100%{
+  opacity: 1;
+  transform: translateY(-80px);
+}
+}
+footer {
+  border: 50px;
+  padding: 50px;
+  font-family: 'Exo',
+    sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: url(https://i.ibb.co/nRm3Ygj/pexels-gnist-design-706498.jpg)center / cover no-repeat fixed;
+  color: black;
+}
+
+.intro {
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.navigation {
+  font-family: 'Exo',
+    sans-serif;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+.dropbutton {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 100px;
+  background-color: #F2F3D9;
+  font-family: 'Exo',
+    sans-serif;
+  border: 2px ridge transparent;
+
+}
+
+.dropcontent a {
+  font-size: 30px;
+  color: blanchedalmond;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropcontent {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: transparent;
+  width: 350px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+}
+
+.dropcontent a:hover {
+  background: url(https://i.ibb.co/nRm3Ygj/pexels-gnist-design-706498.jpg) center;
+  transition: 5s;
+  margin: 5px;
+}
+
+.navigation:hover .dropcontent {
+  display: inline-block;
+
+}
+
+.navigation:hover .dropbutton {
+  font-size: 200px;
+  background-color: transparent;
+  color: #D8BFAA;
+  transition: 2.9s;
+  transform: rotate(180deg);
+}
+
+.copy {
+  font-size: 40px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+}

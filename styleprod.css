@@ -1,0 +1,230 @@
+body {
+  background:url(https://i.ibb.co/vwFLB2z/pexels-anna-shvets-4014919.jpg)center / cover no-repeat fixed;
+  font-family: "Parisienne", cursive;
+  color: black;
+}
+h1 {
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  align-items: center;
+  text-decoration-line: overline underline;
+  border-style: groove;
+  border-radius: 2rem;
+  border-color: black;
+     animation-name: home;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+h3 {
+  font-size: 50px;
+  text-align: center;
+  justify-content: center;
+}
+h2 {
+  font-size: 70px;
+  word-wrap: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: underline;
+  min-height: 100vh;
+}
+p {
+  font-size: 2.5rem;
+}
+
+.top {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 25px;
+}
+.beignets {
+  background: url(https://i.ibb.co/F5dTcvF/Beignets-French-style-donuts-topped-with-sugar-and-a-cup-of-coffee-in-the-background.jpg)
+    fixed;
+}
+.donuts {
+  background: url(https://i.ibb.co/sg1Jv6N/donuts.jpg) fixed;
+}
+.cheesecake {
+  background: url(https://i.ibb.co/vVvzLBJ/chees.jpg) fixed;
+}
+.grill {
+  background: url(https://i.ibb.co/SrV8PkS/grilledcheese.jpg) fixed;
+}
+.cross {
+  background: url(https://i.ibb.co/wChPwfL/cross.jpg) fixed;
+}
+.macrons {
+  background: url(https://i.ibb.co/gM4KYfF/macron.jpg) fixed;
+}
+.dropbtn {
+  background-color: #edafb8;
+  border-style: ridge;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  padding: 26px;
+  font-size: 26px;
+  border: 100px;
+  width: 1000px;
+  font-weight: 600;
+  animation-name: navi;
+  animation-duration: 3s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(177, 62, 110, 0.9);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(123, 44, 99);
+  z-index: 1;
+  width: 250px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: blanchedalmond;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(7, 7, 6);
+  transition: 1s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  transition: 3s;
+  background-color: transparent;
+}
+
+@keyframes home{
+  0%{
+    opacity: 0;
+    transform:translateY(-100px);
+  }
+  75%{
+    opacity: 0.5;
+  }
+
+}
+@keyframes navi{
+  0%{
+    opacity: 0;
+    transform:translateY(-600px);
+}
+50%{
+  opacity: 0.8;
+  transform: translateY(-50px);
+}
+100%{
+  opacity: 1;
+}
+}
+footer {
+  border: 50px;
+  padding: 50px;
+  font-family: 'Exo',
+    sans-serif;
+  height: 50vh;
+
+  color: black;
+}
+
+.intro {
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.navigation {
+  font-family: 'Exo',
+    sans-serif;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+.dropbutton {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 100px;
+  background-color: transparent;
+  color: #542344;
+  font-family: 'Exo',
+    sans-serif;
+  border: 2px ridge transparent;
+
+}
+
+.dropcontent a {
+  font-size: 30px;
+  color: blanchedalmond;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropcontent {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: transparent;
+  width: 350px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+}
+
+.dropcontent a:hover {
+  background: url(https://i.ibb.co/4ZcS6Zd/pexels-zachary-debottis-1888883.jpg) center;
+  transition: 5s;
+  margin: 5px;
+}
+
+.navigation:hover .dropcontent {
+  display: inline-block;
+
+}
+
+.navigation:hover .dropbutton {
+  font-size: 200px;
+  background-color: transparent;
+  color: #CB9CF2;
+  transition: 2.9s;
+  transform: rotate(180deg);
+}
+
+.copy {
+  font-size: 40px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+}

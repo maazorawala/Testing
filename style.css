@@ -1,0 +1,56 @@
+body{
+
+    background: url(https://i.ibb.co/vLw26zv/cover1.jpg) center / cover fixed ;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    min-height:100vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+
+}
+.head{
+    animation-name:heading ;
+    color: rgb(255, 255, 255);
+    font-family: 'Parisienne', cursive;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+.cover{
+    background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.7)) , url(https://i.ibb.co/Ns7Jsxz/joakim-honkasalo-Guq-ZTgx8-Al4-unsplash.jpg) center / cover fixed repeat ;
+    color: rgb(255, 255, 255);
+    font-family: 'Parisienne', cursive;
+}
+.home{
+    color: blanchedalmond;
+    font-family: 'Parisienne', cursive;
+}
+a
+{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Parisienne', cursive;
+}
+p{
+    color: blanchedalmond;
+}
+@keyframes heading{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        color: blanchedalmond;
+    }
+    100%{
+        opacity: 1;
+        font-size: 60px;
+
+    }
+}
